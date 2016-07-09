@@ -39,7 +39,7 @@ void* PosixThreadMainRoutine(void* data)
 {
     while(1) {
         [PrivilegedActions updateDNS];
-        sleep(180);
+        sleep(50);
     }
     return NULL;
 }
