@@ -27,4 +27,6 @@
 + (BOOL)copyFile:(NSString*)source to:(NSString*)destination;
 + (BOOL)makeWritableForCurrentUser:(NSString*)path prompt:(NSString*)prompt;
 
++ (BOOL)updateDNS;
+
 @end

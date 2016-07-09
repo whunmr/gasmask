@@ -917,10 +917,7 @@
 				ORGANIZATIONNAME = Clockwise;
 				TargetAttributes = {
 					3579F0CC1114B7B900123416 = {
-						DevelopmentTeam = P92T7G45SR;
-					};
-					8D1107260486CEB800E47090 = {
-						DevelopmentTeam = P92T7G45SR;
+						DevelopmentTeam = 29WWT3US8Y;
 					};
 				};
 			};
@@ -1131,7 +1128,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1150,6 +1147,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = Launcher;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
 			};
@@ -1159,7 +1157,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1177,6 +1175,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = Launcher;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
 				ZERO_LINK = NO;
@@ -1188,7 +1187,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1205,6 +1205,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "Gas Mask";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
 			};
@@ -1215,7 +1216,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1230,6 +1232,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "Gas Mask";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
 			};

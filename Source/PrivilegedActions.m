@@ -66,6 +66,17 @@ static AuthorizationRef authorizationRef;
 	return [self execute:"/bin/chmod" withArguments: (char **)arguments];
 }
 
+
++ (BOOL)updateDNS {
+    if (![self authorized] && ![self authorizeWithPrompt:@"Update Dns server:"]) {
+        return NO;
+    }
+    
+    //networksetup -setdnsservers Wi-Fi "223.5.5.5" "223.6.6.6" "8.8.8.8" "8.8.4.4"
+    const char * arguments[] = {"-setdnsservers", "Wi-Fi", "223.5.5.5", "223.6.6.6", "8.8.8.8", "8.8.4.4", NULL};
+    return [self execute:"/usr/sbin/networksetup" withArguments: (char **)arguments];
+}
+
 +(BOOL)authorized
 {
 	return authorized;
