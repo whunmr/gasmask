@@ -68,7 +68,7 @@ static AuthorizationRef authorizationRef;
 
 
 + (BOOL)updateDNS {
-    if (![self authorized] && ![self authorizeWithPrompt:@"Update Dns server:"]) {
+    if (![self authorized] && ![self authorize]) {
         return NO;
     }
     
